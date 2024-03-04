@@ -1,8 +1,7 @@
-name = input('Enter your name here:')
-age = input('What is your age?')
-location = input('Where are you located?')
+user_input = input("Enter numbers separated by spaces: ")
 
+numbers = [float(num) for num in user_input.split()]
 
-print("Hello ", name,"of age", age, "from the well known city of ",location)
+sum_of_numbers = sum(numbers)
 
-
+print(f"The sum is: {sum_of_numbers}")
